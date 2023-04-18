@@ -146,7 +146,12 @@ STATIC_ROOT = BASE_DIR / STATIC_URL
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS=True
+# CORS_ALLOW_ALL_ORIGINS=True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://test-app-t8c72p.flutterflow.app",
+   
+]
 CORS_ALLOW_METHODS = [
     "DELETE",
     "GET",
